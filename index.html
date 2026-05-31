@@ -595,9 +595,9 @@ function SiteOdonto() {
   const [tab, setTab] = useState('implantes');
   const gr = '#10B981';
   const baData = [
-    {before:'https://images.unsplash.com/photo-1663182234283-28941e7612da?w=400&q=80',after:'https://images.unsplash.com/photo-1677026010083-78ec7f1b84ed?w=400&q=80',title:'Facetas de Porcelana',sub:'8 lentes ultra-finas · Resultado em 2 sessões',icon:'💎'},
-    {before:'https://images.unsplash.com/photo-1655807946138-811bb2340d34?w=400&q=80',after:'https://images.unsplash.com/photo-1664529842504-5743d286ec1b?w=400&q=80',title:'Clareamento a Laser',sub:'8 tons mais claro · 1 sessão de 60 minutos',icon:'✨'},
-    {before:'https://images.unsplash.com/photo-1661383971159-3fe522cc8d7f?w=400&q=80',after:'https://images.unsplash.com/photo-1682097288491-7e926a30cd0b?w=400&q=80',title:'Alinhadores Invisíveis',sub:'Correção completa · 8 meses de tratamento',icon:'🦷'},
+    {before:'https://images.unsplash.com/photo-1567516364473-233c4b6fcfbe?w=400&q=80',after:'https://images.unsplash.com/photo-1682096189627-2dfb5122b2ec?w=400&q=80',title:'Facetas de Porcelana',sub:'8 lentes ultra-finas · Resultado em 2 sessões',icon:'💎'},
+    {before:'https://images.unsplash.com/photo-1489278353717-f64c6ee8a4d2?w=400&q=80',after:'https://images.unsplash.com/photo-1548382131-e0ebb1f0cdea?w=400&q=80',title:'Clareamento a Laser',sub:'8 tons mais claro · 1 sessão de 60 minutos',icon:'✨'},
+    {before:'https://images.unsplash.com/photo-1562337404-3044c84ac061?w=400&q=80',after:'https://images.unsplash.com/photo-1617812191081-2a24e3f30e45?w=400&q=80',title:'Alinhadores Invisíveis',sub:'Correção completa · 8 meses de tratamento',icon:'🦷'},
   ];
   return (
     <div style={{background:'#F7F9FC',color:'#0D1B2A',fontFamily:"'Space Grotesk',sans-serif",overflowX:'hidden'}}>
@@ -666,9 +666,9 @@ function SiteOdonto() {
           <h2 className="ttl" style={{color:'#0D1B2A'}}>Sorrisos que transformamos</h2>
           <div className="gal-4">
             {[
-              {s:'https://images.unsplash.com/photo-1677026010083-78ec7f1b84ed?w=400&q=80',cap:'Facetas de Porcelana'},
-              {s:'https://images.unsplash.com/photo-1684607633217-462056580c3c?w=400&q=80',cap:'Clareamento a Laser'},
-              {s:'https://images.unsplash.com/photo-1673773401710-d23ef113e06f?w=400&q=80',cap:'Alinhadores'},
+              {s:'https://images.unsplash.com/photo-1682096189627-2dfb5122b2ec?w=400&q=80',cap:'Facetas de Porcelana'},
+              {s:'https://images.unsplash.com/photo-1729688320738-8616a4ab3528?w=400&q=80',cap:'Clareamento a Laser'},
+              {s:'https://images.unsplash.com/photo-1674998790004-1c08a997011c?w=400&q=80',cap:'Alinhadores'},
               {s:'https://images.unsplash.com/photo-1593022356769-11f762e25ed9?w=400&q=80',cap:'Implante + Prótese'},
             ].map(({s,cap},i)=>(
               <div key={i} style={{borderRadius:12,overflow:'hidden',position:'relative',cursor:'default'}}>
@@ -714,12 +714,12 @@ function SiteOdonto() {
                   </div>
                   <a href={WA} target="_blank" className="btn-p" style={{background:gr,color:'#fff',marginTop:28}}><WaIcon/>Agendar Avaliação</a>
                 </div>
-                <img src="https://images.unsplash.com/photo-1657470179447-0f5aa16daa91?w=700&q=80" alt="" className="fr-img" style={{height:400}}/>
+                <img src="https://images.unsplash.com/photo-1681967084087-d1ed5f1bd852?w=700&q=80" alt="" className="fr-img" style={{height:400}}/>
               </div>
             )}
             {tab==='alinhadores'&&(
               <div className="fr">
-                <img src="https://images.unsplash.com/photo-1673773401710-d23ef113e06f?w=700&q=80" alt="" className="fr-img" style={{height:400}}/>
+                <img src="https://images.unsplash.com/photo-1674998790004-1c08a997011c?w=700&q=80" alt="" className="fr-img" style={{height:400}}/>
                 <div>
                   <h3 style={{fontSize:26,fontWeight:700,letterSpacing:-1,color:'#0D1B2A',marginBottom:12}}>Alinhadores Invisíveis</h3>
                   <p style={{color:'#6B7280',lineHeight:1.82,marginBottom:20,fontSize:15}}>Planejamento digital completo — você vê o resultado final antes de usar o primeiro alinhador.</p>
@@ -735,7 +735,7 @@ function SiteOdonto() {
             {tab==='estetica'&&(
               <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(240px,1fr))',gap:18}}>
                 {[{img:'https://images.unsplash.com/photo-1702598544413-12567f383896?w=500&q=80',nm:'Facetas de Porcelana',ds:'Lentes ultra-finas personalizadas para cor e formato ideais.',tag:'Premium'},
-                  {img:'https://images.unsplash.com/photo-1684607633217-462056580c3c?w=500&q=80',nm:'Clareamento a Laser',ds:'Até 8 tons mais claro em uma única sessão de 60 minutos.',tag:'Rápido'},
+                  {img:'https://images.unsplash.com/photo-1729688320738-8616a4ab3528?w=500&q=80',nm:'Clareamento a Laser',ds:'Até 8 tons mais claro em uma única sessão de 60 minutos.',tag:'Rápido'},
                   {img:'https://images.unsplash.com/photo-1617812191081-2a24e3f30e45?w=500&q=80',nm:'Harmonização Oral',ds:'Remodelação completa do sorriso com proporção áurea.',tag:'Completo'},
                 ].map(({img,nm,ds,tag})=>(
                   <div key={nm} style={{background:'#fff',borderRadius:14,overflow:'hidden',border:'1px solid #E8ECF0',transition:'box-shadow .2s'}}
@@ -764,7 +764,7 @@ function SiteOdonto() {
                     ))}
                   </div>
                 </div>
-                <img src="https://images.unsplash.com/photo-1720685193942-5a1c5ac7fd80?w=700&q=80" alt="" className="fr-img" style={{height:380}}/>
+                <img src="https://images.unsplash.com/photo-1593022356769-11f762e25ed9?w=700&q=80" alt="" className="fr-img" style={{height:380}}/>
               </div>
             )}
           </div>
