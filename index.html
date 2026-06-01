@@ -590,223 +590,60 @@ function SiteMarcenaria() {
   );
 }
 
-/* ── SITE 3: ODONTOLOGIA ── */
-function SiteOdonto() {
-  const [tab, setTab] = useState('implantes');
-  const gr = '#10B981';
-  const baData = [
-    {before:'https://images.unsplash.com/photo-1567516364473-233c4b6fcfbe?w=400&q=80',after:'https://images.unsplash.com/photo-1682096189627-2dfb5122b2ec?w=400&q=80',title:'Facetas de Porcelana',sub:'8 lentes ultra-finas · Resultado em 2 sessões',icon:'💎'},
-    {before:'https://images.unsplash.com/photo-1489278353717-f64c6ee8a4d2?w=400&q=80',after:'https://images.unsplash.com/photo-1548382131-e0ebb1f0cdea?w=400&q=80',title:'Clareamento a Laser',sub:'8 tons mais claro · 1 sessão de 60 minutos',icon:'✨'},
-    {before:'https://images.unsplash.com/photo-1562337404-3044c84ac061?w=400&q=80',after:'https://images.unsplash.com/photo-1617812191081-2a24e3f30e45?w=400&q=80',title:'Alinhadores Invisíveis',sub:'Correção completa · 8 meses de tratamento',icon:'🦷'},
-  ];
+/* ── SITE 3: PILATES ── */
+function SitePilates() {
+  const [tab, setTab] = useState('reformer');
+  const ac = '#C4775A';
   return (
-    <div style={{background:'#F7F9FC',color:'#0D1B2A',fontFamily:"'Space Grotesk',sans-serif",overflowX:'hidden'}}>
-      <div className="hero" style={{background:'#0D1B2A'}}>
-        <img className="hero-bg" src="https://images.unsplash.com/photo-1681966962522-546f370bc98e?w=1800&q=80" alt=""/>
-        <div className="hero-ov" style={{background:'linear-gradient(112deg,rgba(13,27,42,.97) 42%,rgba(13,27,42,.4) 100%)'}}/>
+    <div style={{background:'#FAF8F5',color:'#1A1008',fontFamily:"'Space Grotesk',sans-serif",overflowX:'hidden'}}>
+      <div className="hero">
+        <img className="hero-bg" src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=1800&q=80" alt=""/>
+        <div className="hero-ov" style={{background:'linear-gradient(112deg,rgba(26,16,8,.95) 40%,rgba(26,16,8,.35) 100%)'}}/>
         <div className="hero-ct">
-          <div className="badge fu d1" style={{background:'rgba(16,185,129,.1)',color:gr,border:`1px solid rgba(16,185,129,.25)`}}><span className="badge-dot" style={{background:gr}}/>Implantes · Alinhadores · Estética Oral</div>
-          <h1 className="fu d2" style={{color:'#F7F9FC',letterSpacing:'-2px'}}>Sorrisos que<br/>mudam<br/><span style={{color:gr}}>histórias.</span></h1>
-          <p className="fu d3" style={{color:'rgba(247,249,252,.6)'}}>Implantes de titânio com protocolo europeu e alinhadores invisíveis com simulação 3D. Tudo em uma única clínica.</p>
+          <div className="badge fu d1" style={{background:'rgba(196,119,90,.12)',color:ac,border:'1px solid rgba(196,119,90,.28)'}}><span className="badge-dot" style={{background:ac}}/>Reformer · Solo · Aparelhos</div>
+          <h1 className="fu d2" style={{letterSpacing:'-2px',lineHeight:1.0,color:'#FAF8F5'}}>Movimento que<br/>transforma<br/><span style={{color:ac}}>de dentro pra fora.</span></h1>
+          <p className="fu d3" style={{color:'rgba(250,248,245,.6)',maxWidth:460}}>Pilates de alto rendimento com equipamentos premium. Turmas reduzidas, atenção individual e resultados que você sente na segunda aula.</p>
           <div className="btn-row fu d4">
-            <a href={WA} target="_blank" className="btn-p" style={{background:gr,color:'#0D1B2A'}}><WaIcon/>Avaliação Gratuita</a>
-            <button className="btn-s" style={{color:'#F7F9FC',border:'1px solid rgba(247,249,252,.18)'}}>Simulação de Sorriso</button>
+            <a href={WA} target="_blank" className="btn-p" style={{background:ac,color:'#FAF8F5'}}><WaIcon/>Agendar Aula Experimental</a>
+            <button className="btn-s" style={{color:'#FAF8F5',border:'1px solid rgba(250,248,245,.18)'}}>Ver Modalidades</button>
           </div>
         </div>
       </div>
-
-      {/* stats */}
-      <div style={{background:'#fff',padding:'36px clamp(20px,6vw,80px)',borderBottom:'1px solid #E8ECF0'}}>
+      <div style={{background:'#fff',padding:'36px clamp(20px,6vw,80px)',borderBottom:'1px solid #EDE9E4'}}>
         <div className="inner stats-bar">
-          {[['6.200+','Implantes realizados'],['★ 4.97','840 avaliações'],['15 anos','Especialização'],['100%','Aprovação CRO']].map(([n,l])=>(
+          {[['340+','Alunos ativos'],['28','Aulas por semana'],['★ 4.98','320 avaliações'],['8 anos','De experiência']].map(([n,l])=>(
             <div key={l} style={{textAlign:'center'}}>
-              <div style={{fontSize:30,fontWeight:700,color:'#0D1B2A',letterSpacing:-1}}>{n}</div>
-              <div style={{fontSize:12,color:'#6B7280',marginTop:3}}>{l}</div>
+              <div style={{fontSize:30,fontWeight:700,color:'#1A1008',letterSpacing:-1}}>{n}</div>
+              <div style={{fontSize:12,color:'#9E8E7A',marginTop:3}}>{l}</div>
             </div>
           ))}
         </div>
       </div>
-
-      {/* ANTES E DEPOIS */}
-      <div className="sec" style={{background:'#fff'}}>
+      <div className="sec" style={{background:'#FAF8F5'}}>
         <div className="inner">
-          <div className="lbl" style={{color:gr}}>Transformações Reais</div>
-          <h2 className="ttl" style={{color:'#0D1B2A'}}>Antes e depois dos nossos pacientes</h2>
-          <p style={{color:'#6B7280',fontSize:15,maxWidth:520,marginTop:8}}>Resultados reais de pacientes atendidos na clínica. Fotos com autorização dos pacientes.</p>
-          <div className="ba-grid">
-            {baData.map(({before,after,title,sub,icon})=>(
-              <div className="ba-card" key={title}>
-                <div className="ba-imgs">
-                  <div className="ba-img-wrap">
-                    <img src={before} alt="Antes"/>
-                    <span className="ba-label" style={{background:'rgba(30,30,30,.82)',color:'#fff',backdropFilter:'blur(4px)'}}>ANTES</span>
-                  </div>
-                  <div className="ba-img-wrap">
-                    <img src={after} alt="Depois"/>
-                    <span className="ba-label" style={{background:gr,color:'#fff'}}>DEPOIS ✓</span>
-                  </div>
-                </div>
-                <div className="ba-body" style={{borderTop:'3px solid #DCFCE7'}}>
-                  <div style={{display:'flex',alignItems:'center',gap:8}}>
-                    <span style={{fontSize:18}}>{icon}</span>
-                    <div className="ba-title">{title}</div>
-                  </div>
-                  <div className="ba-sub" style={{marginTop:4}}>{sub}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* galeria de sorrisos */}
-      <div className="sec" style={{background:'#F7F9FC'}}>
-        <div className="inner">
-          <div className="lbl" style={{color:gr}}>Galeria</div>
-          <h2 className="ttl" style={{color:'#0D1B2A'}}>Sorrisos que transformamos</h2>
-          <div className="gal-4">
-            {[
-              {s:'https://images.unsplash.com/photo-1682096189627-2dfb5122b2ec?w=400&q=80',cap:'Facetas de Porcelana'},
-              {s:'https://images.unsplash.com/photo-1729688320738-8616a4ab3528?w=400&q=80',cap:'Clareamento a Laser'},
-              {s:'https://images.unsplash.com/photo-1674998790004-1c08a997011c?w=400&q=80',cap:'Alinhadores'},
-              {s:'https://images.unsplash.com/photo-1593022356769-11f762e25ed9?w=400&q=80',cap:'Implante + Prótese'},
-            ].map(({s,cap},i)=>(
-              <div key={i} style={{borderRadius:12,overflow:'hidden',position:'relative',cursor:'default'}}>
-                <img src={s} alt={cap} style={{width:'100%',height:260,objectFit:'cover',objectPosition:'center top',transition:'transform .4s',display:'block'}}
-                  onMouseEnter={e=>e.target.style.transform='scale(1.06)'}
-                  onMouseLeave={e=>e.target.style.transform='scale(1)'}/>
-                <div style={{position:'absolute',bottom:0,left:0,right:0,padding:'24px 14px 12px',background:'linear-gradient(to top,rgba(13,27,42,.75) 0%,transparent 100%)'}}>
-                  <span style={{fontSize:11,fontWeight:700,color:'#fff',letterSpacing:.5}}>{cap}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* tabs tratamentos */}
-      <div style={{background:'#fff',padding:'72px clamp(20px,6vw,80px) 0'}}>
-        <div className="inner">
-          <div className="lbl" style={{color:gr}}>Tratamentos</div>
-          <h2 className="ttl" style={{color:'#0D1B2A'}}>Escolha seu tratamento</h2>
+          <div className="lbl" style={{color:ac}}>Modalidades</div>
+          <h2 className="ttl" style={{color:'#1A1008'}}>Escolha seu método</h2>
           <div className="odonto-tabs">
-            {[['implantes','🦷 Implantes'],['alinhadores','✨ Alinhadores'],['estetica','💎 Estética'],['ortodontia','⚡ Ortodontia']].map(([id,label])=>(
-              <button key={id} onClick={()=>setTab(id)}
-                style={{padding:'11px 18px',border:'none',background:'transparent',cursor:'pointer',
-                  fontSize:13,fontWeight:600,fontFamily:"'Space Grotesk',sans-serif",whiteSpace:'nowrap',
-                  color:tab===id?gr:'#6B7280',
-                  borderBottom:tab===id?`2px solid ${gr}`:'2px solid transparent',
-                  marginBottom:-2,transition:'all .18s'}}>
-                {label}
-              </button>
+            {[['reformer','Reformer'],['solo','Solo'],['aparelhos','Aparelhos'],['funcional','Funcional']].map(([id,label])=>(
+              <button key={id} onClick={()=>setTab(id)} style={{padding:'11px 18px',border:'none',background:'transparent',cursor:'pointer',fontSize:13,fontWeight:600,fontFamily:"'Space Grotesk',sans-serif",whiteSpace:'nowrap',color:tab===id?ac:'#9E8E7A',borderBottom:tab===id?'2px solid '+ac:'2px solid transparent',marginBottom:-2,transition:'all .18s'}}>{label}</button>
             ))}
           </div>
           <div style={{padding:'48px 0'}}>
-            {tab==='implantes'&&(
-              <div className="fr">
-                <div>
-                  <h3 style={{fontSize:26,fontWeight:700,letterSpacing:-1,color:'#0D1B2A',marginBottom:12}}>Implante Osseointegrado</h3>
-                  <p style={{color:'#6B7280',lineHeight:1.82,marginBottom:20,fontSize:15}}>Implantes de titânio grau 4 com superfície SLActive — maior taxa de osseointegração disponível. Protocolo suíço do diagnóstico à prótese definitiva.</p>
-                  <div className="checks">
-                    {['Carga imediata: dente no mesmo dia','Garantia estrutural de 15 anos','Cirurgia guiada por tomografia 3D','Anestesia sem agulha disponível','Parcelamento em até 48x'].map(f=>(
-                      <div className="chk" key={f}><span className="chk-ic" style={{background:'#DCFCE7',color:gr}}>✓</span><span style={{fontSize:14,color:'#374151'}}>{f}</span></div>
-                    ))}
-                  </div>
-                  <a href={WA} target="_blank" className="btn-p" style={{background:gr,color:'#fff',marginTop:28}}><WaIcon/>Agendar Avaliação</a>
-                </div>
-                <img src="https://images.unsplash.com/photo-1681967084087-d1ed5f1bd852?w=700&q=80" alt="" className="fr-img" style={{height:400}}/>
-              </div>
-            )}
-            {tab==='alinhadores'&&(
-              <div className="fr">
-                <img src="https://images.unsplash.com/photo-1674998790004-1c08a997011c?w=700&q=80" alt="" className="fr-img" style={{height:400}}/>
-                <div>
-                  <h3 style={{fontSize:26,fontWeight:700,letterSpacing:-1,color:'#0D1B2A',marginBottom:12}}>Alinhadores Invisíveis</h3>
-                  <p style={{color:'#6B7280',lineHeight:1.82,marginBottom:20,fontSize:15}}>Planejamento digital completo — você vê o resultado final antes de usar o primeiro alinhador.</p>
-                  <div className="checks">
-                    {['Sem fios, bráquetes ou dor','Simulação 3D antes de iniciar','Resultado visível em 60–90 dias','Consultas remotas disponíveis','Retainer digital pós-tratamento'].map(f=>(
-                      <div className="chk" key={f}><span className="chk-ic" style={{background:'#DCFCE7',color:gr}}>✓</span><span style={{fontSize:14,color:'#374151'}}>{f}</span></div>
-                    ))}
-                  </div>
-                  <a href={WA} target="_blank" className="btn-p" style={{background:gr,color:'#fff',marginTop:28}}><WaIcon/>Simular Resultado</a>
-                </div>
-              </div>
-            )}
-            {tab==='estetica'&&(
-              <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(240px,1fr))',gap:18}}>
-                {[{img:'https://images.unsplash.com/photo-1702598544413-12567f383896?w=500&q=80',nm:'Facetas de Porcelana',ds:'Lentes ultra-finas personalizadas para cor e formato ideais.',tag:'Premium'},
-                  {img:'https://images.unsplash.com/photo-1729688320738-8616a4ab3528?w=500&q=80',nm:'Clareamento a Laser',ds:'Até 8 tons mais claro em uma única sessão de 60 minutos.',tag:'Rápido'},
-                  {img:'https://images.unsplash.com/photo-1617812191081-2a24e3f30e45?w=500&q=80',nm:'Harmonização Oral',ds:'Remodelação completa do sorriso com proporção áurea.',tag:'Completo'},
-                ].map(({img,nm,ds,tag})=>(
-                  <div key={nm} style={{background:'#fff',borderRadius:14,overflow:'hidden',border:'1px solid #E8ECF0',transition:'box-shadow .2s'}}
-                    onMouseEnter={e=>e.currentTarget.style.boxShadow='0 12px 32px rgba(0,0,0,.08)'}
-                    onMouseLeave={e=>e.currentTarget.style.boxShadow='none'}>
-                    <div style={{position:'relative'}}>
-                      <img src={img} alt="" style={{width:'100%',height:200,objectFit:'cover',objectPosition:'top'}}/>
-                      <span style={{position:'absolute',top:10,right:10,padding:'3px 10px',borderRadius:100,background:gr,color:'#fff',fontSize:10,fontWeight:700,letterSpacing:1}}>{tag}</span>
-                    </div>
-                    <div style={{padding:22}}>
-                      <div style={{fontWeight:700,fontSize:15,marginBottom:7,color:'#0D1B2A'}}>{nm}</div>
-                      <div style={{fontSize:13,color:'#6B7280',lineHeight:1.65}}>{ds}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-            {tab==='ortodontia'&&(
-              <div className="fr">
-                <div>
-                  <h3 style={{fontSize:26,fontWeight:700,letterSpacing:-1,color:'#0D1B2A',marginBottom:12}}>Ortodontia Digital</h3>
-                  <p style={{color:'#6B7280',lineHeight:1.82,marginBottom:20,fontSize:15}}>Aparelhos autoligados de última geração com fio termoativado — tratamentos mais rápidos e confortáveis.</p>
-                  <div className="checks">
-                    {['Metálicos, cerâmicos e safira','30% mais rápido que o convencional','Menos consultas com bráquetes autoligados','Documentação digital completa inclusa'].map(f=>(
-                      <div className="chk" key={f}><span className="chk-ic" style={{background:'#DCFCE7',color:gr}}>✓</span><span style={{fontSize:14,color:'#374151'}}>{f}</span></div>
-                    ))}
-                  </div>
-                </div>
-                <img src="https://images.unsplash.com/photo-1593022356769-11f762e25ed9?w=700&q=80" alt="" className="fr-img" style={{height:380}}/>
-              </div>
-            )}
+            {tab==='reformer'&&(<div className="fr"><div><h3 style={{fontSize:26,fontWeight:700,letterSpacing:-1,color:'#1A1008',marginBottom:12}}>Pilates no Reformer</h3><p style={{color:'#6B5E52',lineHeight:1.82,marginBottom:20,fontSize:15}}>Equipamento com molas de resistência ajustável que trabalha força, mobilidade e consciência corporal de forma simultânea.</p><div className="checks">{['Melhora postura em até 30 dias','Fortalecimento do core sem impacto','Turmas de até 4 alunos por instrutor','Equipamentos Balanced Body importados','Ideal para reabilitação e alta performance'].map(f=>(<div className="chk" key={f}><span className="chk-ic" style={{background:'rgba(196,119,90,.12)',color:ac}}>✓</span><span style={{fontSize:14,color:'#4A3C32'}}>{f}</span></div>))}</div><a href={WA} target="_blank" className="btn-p" style={{background:ac,color:'#FAF8F5',marginTop:28}}><WaIcon/>Quero Experimentar</a></div><img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=700&q=80" alt="" className="fr-img" style={{height:420}}/></div>)}
+            {tab==='solo'&&(<div className="fr"><img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=700&q=80" alt="" className="fr-img" style={{height:420}}/><div><h3 style={{fontSize:26,fontWeight:700,letterSpacing:-1,color:'#1A1008',marginBottom:12}}>Pilates Solo</h3><p style={{color:'#6B5E52',lineHeight:1.82,marginBottom:20,fontSize:15}}>Método clássico no tapete com progressões desafiadoras. Flexibilidade, equilíbrio e força funcional sem necessidade de equipamentos.</p><div className="checks">{['Sem equipamentos — praticável em casa','Turmas de até 8 alunos','Progressão personalizada por nível','Indicado para iniciantes e avançados','Foco em mobilidade e flexibilidade'].map(f=>(<div className="chk" key={f}><span className="chk-ic" style={{background:'rgba(196,119,90,.12)',color:ac}}>✓</span><span style={{fontSize:14,color:'#4A3C32'}}>{f}</span></div>))}</div><a href={WA} target="_blank" className="btn-p" style={{background:ac,color:'#FAF8F5',marginTop:28}}><WaIcon/>Agendar Aula</a></div></div>)}
+            {tab==='aparelhos'&&(<div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(240px,1fr))',gap:18}}>{[{nm:'Cadillac',ds:'Aparelho completo com 85 exercícios possíveis. Foco em flexibilidade e reabilitação.',tag:'Reabilitação'},{nm:'Chair',ds:'Trabalho intenso de equilíbrio e força funcional. Desafio para alunos avançados.',tag:'Avançado'},{nm:'Barrel',ds:'Arqueamentos, alongamentos e fortalecimento da coluna torácica.',tag:'Mobilidade'}].map(({nm,ds,tag})=>(<div key={nm} style={{background:'#fff',borderRadius:14,border:'1px solid #EDE9E4',padding:28,transition:'box-shadow .2s'}} onMouseEnter={e=>e.currentTarget.style.boxShadow='0 12px 32px rgba(196,119,90,.1)'} onMouseLeave={e=>e.currentTarget.style.boxShadow='none'}><span style={{display:'inline-block',padding:'3px 10px',borderRadius:100,background:'rgba(196,119,90,.12)',color:ac,fontSize:10,fontWeight:700,letterSpacing:1,marginBottom:14}}>{tag}</span><div style={{fontWeight:700,fontSize:17,marginBottom:8,color:'#1A1008'}}>{nm}</div><div style={{fontSize:13,color:'#6B5E52',lineHeight:1.65}}>{ds}</div></div>))}</div>)}
+            {tab==='funcional'&&(<div className="fr"><div><h3 style={{fontSize:26,fontWeight:700,letterSpacing:-1,color:'#1A1008',marginBottom:12}}>Pilates Funcional</h3><p style={{color:'#6B5E52',lineHeight:1.82,marginBottom:20,fontSize:15}}>Integração do método Pilates com movimentos funcionais do dia a dia. Melhora performance esportiva e reduz lesões crônicas.</p><div className="checks">{['Integração com treino esportivo','Redução de dores crônicas em 3 semanas','Melhora de performance em até 40%','Acompanhamento quinzenal de evolução'].map(f=>(<div className="chk" key={f}><span className="chk-ic" style={{background:'rgba(196,119,90,.12)',color:ac}}>✓</span><span style={{fontSize:14,color:'#4A3C32'}}>{f}</span></div>))}</div></div><img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=700&q=80" alt="" className="fr-img" style={{height:400}}/></div>)}
           </div>
         </div>
       </div>
-
-      {/* depoimentos */}
-      <div className="sec" style={{background:'#F7F9FC'}}>
-        <div className="inner">
-          <div className="lbl" style={{color:gr}}>Histórias reais</div>
-          <h2 className="ttl" style={{color:'#0D1B2A'}}>Sorrisos transformados</h2>
-          <div className="tg">
-            {[{q:'"Fui com o dente quebrado e saí com o sorriso completo no mesmo dia com carga imediata. Profissionalismo fora do comum."',n:'Rodrigo Alves',r:'Implante 2025',img:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80'},
-              {q:'"8 meses com alinhadores e resultado melhor do que eu imaginava na simulação inicial. Mudou minha autoestima."',n:'Fernanda Costa',r:'Alinhadores 2024',img:'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80'},
-              {q:'"8 facetas de porcelana e o resultado é indistinguível de dentes naturais. Sutil, elegante, exatamente o que pedi."',n:'Mariana Braga',r:'Facetas 2024',img:'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80'},
-            ].map(({q,n,r,img})=>(
-              <div className="tc" key={n} style={{background:'#fff',borderColor:'#E8ECF0'}}>
-                <div className="stars" style={{color:gr}}>★★★★★</div>
-                <p className="tq" style={{color:'#374151'}}>{q}</p>
-                <div className="ta"><img className="tav" src={img} alt=""/>
-                  <div><div className="tn" style={{color:'#0D1B2A'}}>{n}</div><div className="tr" style={{color:gr}}>{r}</div></div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <div style={{background:'#0D1B2A',padding:'64px clamp(20px,6vw,80px)',textAlign:'center'}}>
-        <h2 style={{color:'#F7F9FC',fontSize:36,fontWeight:700,letterSpacing:-1.5,marginBottom:12}}>Transforme seu sorriso agora</h2>
-        <p style={{color:'rgba(247,249,252,.45)',fontSize:15,marginBottom:32}}>Avaliação completa com simulação digital · Sem compromisso</p>
-        <a href={WA} target="_blank" className="btn-p" style={{background:gr,color:'#0D1B2A',margin:'0 auto'}}><WaIcon/>Agendar Avaliação Gratuita</a>
-      </div>
-      <div className="ft" style={{background:'#0D1B2A',borderColor:'rgba(247,249,252,.06)',color:'#F7F9FC'}}>
-        <div className="ft-logo" style={{color:gr}}>SORRISO STUDIO</div>
-        <div className="ft-links">{['Tratamentos','Equipe','Blog','Agendar'].map(l=><span key={l} className="ft-link">{l}</span>)}</div>
-        <div style={{fontSize:11,opacity:.28}}>© 2025 Sorriso Studio</div>
-      </div>
+      <div className="sec" style={{background:'#fff'}}><div className="inner"><div className="lbl" style={{color:ac}}>Espaço</div><h2 className="ttl" style={{color:'#1A1008'}}>Um studio pensado para você</h2><div className="gal-4">{[{s:'https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=500&q=80',cap:'Studio Principal'},{s:'https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=500&q=80',cap:'Sala Reformer'},{s:'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&q=80',cap:'Aula em Grupo'},{s:'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&q=80',cap:'Relaxamento'}].map(({s,cap},i)=>(<div key={i} style={{borderRadius:12,overflow:'hidden',position:'relative'}}><img src={s} alt={cap} style={{width:'100%',height:260,objectFit:'cover',transition:'transform .4s'}} onMouseEnter={e=>e.target.style.transform='scale(1.06)'} onMouseLeave={e=>e.target.style.transform='scale(1)'}/><div style={{position:'absolute',bottom:0,left:0,right:0,padding:'24px 14px 12px',background:'linear-gradient(to top,rgba(26,16,8,.7) 0%,transparent 100%)'}}><span style={{fontSize:11,fontWeight:700,color:'#fff',letterSpacing:.5}}>{cap}</span></div></div>))}</div></div></div>
+      <div className="sec" style={{background:'#FAF8F5'}}><div className="inner"><div className="lbl" style={{color:ac}}>Planos</div><h2 className="ttl" style={{color:'#1A1008'}}>Invista no seu corpo</h2><div className="pricing-grid"><div className="pc" style={{background:'#fff',borderColor:'#EDE9E4'}}><div className="p-lbl" style={{color:'#9E8E7A'}}>Essencial</div><div className="p-price" style={{color:'#1A1008'}}><sup>R$</sup>280</div><div className="p-period" style={{color:'#9E8E7A'}}>por mês · 8 aulas</div><ul className="p-feats">{['2 aulas por semana','Solo ou Reformer','Avaliação inicial inclusa','App de acompanhamento'].map(f=>(<li className="p-feat" key={f}><span className="p-chk" style={{background:'rgba(196,119,90,.12)',color:ac}}>✓</span>{f}</li>))}</ul><a href={WA} target="_blank" className="btn-s" style={{display:'flex',justifyContent:'center',width:'100%',color:'#1A1008',borderColor:'#EDE9E4'}}>Começar agora</a></div><div className="pc feat" style={{borderColor:'rgba(196,119,90,.45)',background:'rgba(196,119,90,.05)'}}><div className="feat-badge" style={{background:ac}}>MAIS POPULAR</div><div className="p-lbl" style={{color:'#9E8E7A'}}>Premium</div><div className="p-price" style={{color:'#1A1008'}}><sup>R$</sup>480</div><div className="p-period" style={{color:'#9E8E7A'}}>por mês · ilimitado</div><ul className="p-feats">{['Aulas ilimitadas · todas modalidades','Acesso ao Cadillac e aparelhos','1 aula particular por mês','Reavaliação mensal de evolução','Prioridade no agendamento'].map(f=>(<li className="p-feat" key={f}><span className="p-chk" style={{background:'rgba(196,119,90,.15)',color:ac}}>✓</span>{f}</li>))}</ul><a href={WA} target="_blank" className="btn-p" style={{background:ac,color:'#FAF8F5',justifyContent:'center',width:'100%'}}><WaIcon/>Quero este plano</a></div></div></div></div>
+      <div className="sec" style={{background:'#fff'}}><div className="inner"><div className="lbl" style={{color:ac}}>Alunos</div><h2 className="ttl" style={{color:'#1A1008'}}>O que dizem nossos alunos</h2><div className="tg">{[{q:'"Três meses de Reformer e minha hérnia de disco não me incomoda mais. A instrutora ajusta cada exercício pro meu corpo. Resultado que nenhum fisio tinha conseguido."',n:'Marcos Oliveira',r:'Aluno há 8 meses',img:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80'},{q:'"Comecei sem nunca ter feito pilates e em 30 dias já senti diferença na postura e no sono. Turmas pequenas — parece aula particular."',n:'Camila Santos',r:'Aluna há 4 meses',img:'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80'},{q:'"Sou triatleta e o pilates funcional mudou minha performance. Menos lesões, mais mobilidade. Indico para qualquer atleta."',n:'Rafael Duarte',r:'Aluno há 1 ano',img:'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80'}].map(({q,n,r,img})=>(<div className="tc" key={n} style={{background:'#FAF8F5',borderColor:'#EDE9E4'}}><div className="stars" style={{color:ac}}>★★★★★</div><p className="tq" style={{color:'#4A3C32'}}>{q}</p><div className="ta"><img className="tav" src={img} alt=""/><div><div className="tn" style={{color:'#1A1008'}}>{n}</div><div className="tr" style={{color:ac}}>{r}</div></div></div></div>))}</div></div></div>
+      <div style={{background:'linear-gradient(135deg,#2A1A10,#1A1008)',padding:'72px clamp(20px,6vw,80px)',textAlign:'center',borderTop:'1px solid rgba(196,119,90,.15)'}}><div style={{fontSize:11,fontWeight:700,letterSpacing:2.5,textTransform:'uppercase',color:ac,marginBottom:16}}>Primeira aula grátis</div><h2 style={{color:'#FAF8F5',fontSize:'clamp(28px,4vw,50px)',fontWeight:700,letterSpacing:-1.5,marginBottom:12}}>Comece sua transformação hoje</h2><p style={{color:'rgba(250,248,245,.45)',marginBottom:32,fontSize:15}}>Sem contrato · Equipamentos premium · Turmas de até 4 alunos</p><a href={WA} target="_blank" className="btn-p" style={{background:ac,color:'#FAF8F5',margin:'0 auto'}}><WaIcon/>Agendar Aula Experimental</a></div>
+      <div className="ft" style={{background:'#140C06',borderColor:'rgba(250,248,245,.06)',color:'#FAF8F5'}}><div className="ft-logo" style={{color:ac}}>AXIS PILATES</div><div className="ft-links">{['Modalidades','Planos','Equipe','Contato'].map(l=><span key={l} className="ft-link">{l}</span>)}</div><div style={{fontSize:11,opacity:.28}}>© 2025 Axis Pilates</div></div>
     </div>
   );
 }
-
 /* ── SITE 4: ARQUITETURA ── */
 function SiteArquitetura() {
   const [hov, setHov] = useState(null);
@@ -1052,7 +889,7 @@ function SiteEnergia() {
 const SITES = [
   {id:'estetica',  label:'Clínica Estética', component:SiteEstetica},
   {id:'marcenaria',label:'Marcenaria',        component:SiteMarcenaria},
-  {id:'odonto',    label:'Odontologia',       component:SiteOdonto},
+  {id:'pilates',   label:'Pilates',           component:SitePilates},
   {id:'arq',       label:'Arquitetura',       component:SiteArquitetura},
   {id:'energia',   label:'Energia Solar',     component:SiteEnergia},
 ];
